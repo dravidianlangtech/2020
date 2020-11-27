@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>DravidianLangTech-2021</title>
+<link rel="stylesheet"
+	href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-2.0.1.min.js"></script>
+<script
+	src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+.marquee {
+    width: 100%;
+	line-height: 50px;
+	background-color: snow;
+	color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee div {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+.marquee div span {
+    padding-left: 15px
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+.customTabMenu {
+	width: 15% !important; /* 15% for 6 tabs wide */
+	clear: none !important; /* Prevents line break */
+}
+</style>
+</head>
+<body>
+	<div data-role="page" id="page-1">
+		<div data-role="header" data-position="fixed">
+			<h1 style="text-align: left; margin-left: 10px; font-size: 24pt">
+				<a style="text-decoration: none;" href="javascript:location.reload();">DravidianLangTech-2021</a>
+			</h1>
+			<p style="text-align: left; margin-left: 10px;">The First
+				Workshop on Speech and Language Technologies for Dravidian Languages</p>
+			<div data-role="navbar" id="navbar-1">
+				<ul>
+					<li class="customTabMenu"><a href="html/call_for_participation.html"
+						target="ifr_body1">Call for Participation</a></li>
+					<li class="customTabMenu"><a href="html/shared_tasks.html"
+						target="ifr_body1">Shared Tasks</a></li>
+					<li class="customTabMenu"><a href="html/important_dates.html"
+						target="ifr_body1">Important Dates</a></li>
+					<li class="customTabMenu"><a href="html/organisers.html"
+						target="ifr_body1">Organisers</a></li>
+					<li class="customTabMenu"><a href="html/proceedings.html"
+						target="ifr_body1">Proceedings</a></li>
+					<li class="customTabMenu"><a href="html/registration.html"
+						target="ifr_body1">Registration</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<iframe id="ifr_1" name='ifr_body1' src="html/home_content.html"
+				style="background: #FFFFFF; border: 0; height: 1800px; width: 100%"
+				title="Index Body Content"> </iframe>
+			<div class="marquee">
+				<div>
+					<!-- <span><a href="https://nuig.insight-centre.org/uld/" target="_blank"><img
+						class="img-responsive" alt="Unit for Linguistic Data"
+						src="images/insight.png" data-toggle="tooltip"
+						title="Unit for Linguistic Data" data-placement="bottom"></a></span> --> 
+					<span><a href="https://www.insight-centre.org/" target="_blank"><img
+						class="img-responsive"
+						alt="Insight SFI Research Centre for Data Analytics"
+						src="images/insight.png" data-toggle="tooltip"
+						title="Insight SFI Research Centre for Data Analytics"
+						data-placement="bottom"></a></span>
+					<span><a href="https://www.sfi.ie/"
+						target="_blank"><img class="img-responsive"
+						alt="Science Foundation Ireland" src="images/sfi.png"
+						data-toggle="tooltip"
+						title="Insight SFI Research Centre for Data Analytics"
+						data-placement="bottom"></a></span>
+					<span><a href="https://dsi.nuigalway.ie/"
+						target="_blank"><img class="img-responsive"
+						alt="Data Science Institute" src="images/dsi_nui.png"
+						data-toggle="tooltip" title="Data Science Institute"
+						data-placement="bottom"></a></span>
+					<span><a href="https://www.nuigalway.ie/"
+						target="_blank"><img class="img-responsive" alt="NUI Galway"
+						src="images/nui.png" data-toggle="tooltip"
+						title="National University of Ireland Galway"
+						data-placement="bottom"></a></span>
+					<span><a href="https://www.iiitmk.ac.in/"
+						target="_blank"><img class="img-responsive"
+						alt="IIITM-K Trivandrum" src="images/iiitmk.png"
+						data-toggle="tooltip" title="IIITM-K" data-placement="bottom"></a></span>
+					<span><a href="https://www.nitk.ac.in/" target="_blank"><img
+						class="img-responsive" alt="NIT Surathkal"
+						src="images/nitk_short.png" data-toggle="tooltip"
+						title="NIT Surathkal" data-placement="bottom"></a></span>
+					<span><a href="https://www.uohyd.ac.in/" target="_blank"><img
+						class="img-responsive" alt="University of Hyderabad"
+						src="images/uoh.png" data-toggle="tooltip"
+						title="University of Hyderabad" data-placement="bottom"></a></span>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="footer">
+			<div class="copyright text-center my-auto" align="center">
+				<span>Copyright &copy; DravidianLangTech-2021</span>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
